@@ -1,133 +1,135 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>casestudy</groupId>
-  <artifactId>casestudy</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>casestudy</groupId>
+	<artifactId>casestudy</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
 
-<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.source>1.8</maven.compiler.source>
 
-<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.target>1.8</maven.compiler.target>
 
-</properties>
+	</properties>
 
-<dependencies>
+	<dependencies>
 
- 
 
-<dependency>
 
-<groupId>info.cukes</groupId>
+		<dependency>
 
-<artifactId>cucumber-junit</artifactId>
+			<groupId>info.cukes</groupId>
 
-<version>1.2.5</version>
+			<artifactId>cucumber-junit</artifactId>
 
-<scope>test</scope>
+			<version>1.2.5</version>
 
-</dependency>
+			<scope>test</scope>
 
- 
+		</dependency>
 
-<dependency>
 
-<groupId>info.cukes</groupId>
 
-<artifactId>cucumber-java</artifactId>
+		<dependency>
 
-<version>1.2.5</version>
+			<groupId>info.cukes</groupId>
 
-</dependency>
+			<artifactId>cucumber-java</artifactId>
 
- 
+			<version>1.2.5</version>
 
-<dependency>
+		</dependency>
 
-<groupId>org.seleniumhq.selenium</groupId>
 
-<artifactId>selenium-java</artifactId>
 
-<version>3.141.59</version>
+		<dependency>
 
-</dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
 
-<dependency>
+			<artifactId>selenium-java</artifactId>
 
-<groupId>junit</groupId>
+			<version>3.141.59</version>
 
-<artifactId>junit</artifactId>
+		</dependency>
 
-<version>4.12</version>
+		<dependency>
 
-<scope>test</scope>
+			<groupId>junit</groupId>
 
-</dependency>
+			<artifactId>junit</artifactId>
 
- 
+			<version>4.12</version>
 
-</dependencies>
+			<scope>test</scope>
 
-<build>
+		</dependency>
 
-<plugins>
 
-<plugin>
 
-<groupId>org.apache.maven.plugins</groupId>
+	</dependencies>
 
-<artifactId>maven-surefire-plugin</artifactId>
+	<build>
 
-<version>2.22.0</version>
+		<plugins>
 
-<dependencies>
+			<plugin>
 
-<dependency>
+				<groupId>org.apache.maven.plugins</groupId>
 
-<groupId>org.apache.maven.surefire</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
 
-<artifactId>surefire-junit4</artifactId>
+				<version>2.22.0</version>
 
-<version>2.22.0</version>
+				<dependencies>
 
-</dependency>
+					<dependency>
 
-</dependencies>
+						<groupId>org.apache.maven.surefire</groupId>
 
-<configuration>
+						<artifactId>surefire-junit4</artifactId>
 
-<includes>
+						<version>2.22.0</version>
 
-<include>**/*.java</include>
+					</dependency>
 
-</includes>
+				</dependencies>
 
-</configuration>
+				<configuration>
 
- 
+					<includes>
 
-</plugin>
+						<include>**/*.java</include>
 
-<plugin>
+					</includes>
 
-        <groupId>org.apache.maven.plugins</groupId>
+				</configuration>
 
-        <artifactId>maven-compiler-plugin</artifactId>
 
-        <version>3.8.1</version>
 
-        <configuration>
+			</plugin>
 
-          <source>1.8</source>
+			<plugin>
 
-          <target>1.8</target>
+				<groupId>org.apache.maven.plugins</groupId>
 
-        </configuration>
+				<artifactId>maven-compiler-plugin</artifactId>
 
-      </plugin>
+				<version>3.8.1</version>
 
-</plugins>
+				<configuration>
 
-</build>
+					<source>1.8</source>
+
+					<target>1.8</target>
+
+				</configuration>
+
+			</plugin>
+
+		</plugins>
+
+	</build>
 
 </project>
 
